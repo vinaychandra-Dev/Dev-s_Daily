@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey.org</title>
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-image: url(https://images.unsplash.com/photo-1463428537233-c84b754b2c84?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            opacity: 85%;
+        }
+
+    .container{
+        text-align: left;
+    
+    }
+    form{
+        margin: 30px auto;
+        padding: 30px 30px;
+        max-width: 425px;
+        background-color: white;
+        /* opacity: 65%; */
+        border-radius: 10px;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .container input,
+    .container select,
+    .container textarea{
+        display: block;
+        padding: 10px;
+        width: 95%;
+    }
+    .container input[type="radio"],
+    .container input[type="checkbox"]{
+        display: inline-block;
+        width: auto;
+    }
+    button{
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        height: 40px;
+        margin-top: 10px;
+        background-color: lightgreen;
+    }
+
+    
+        
+    </style>
+    <body>
+        <h1 style="text-align: center; color:  black ;"><em>Employee Form</em></h1>
+        <form style=" text-align: center;">
+            <fieldset>
+
+            <div class="container">
+
+                <label for="ID">Employee-ID :</label>
+                <input type="text" id="ID" placeholder="Enter Your Id"><br>
+            </div>
+
+            <div class="container">
+
+                <label for="fname">First-Name :</label>
+                <input type="text" id="name" placeholder="Enter Your First-Name"><br>
+            </div>    
+                
+            
+            <div class="container">
+
+                <label for="lname">Last-Name :</label>
+                <input type="text" id="lname" placeholder="Enter Your Last-Name"><br>
+            </div>
+
+            
+            <div class="container">
+                <label for="age">Age :</label>
+                <input type="text" id="age" placeholder="Enter Your Age"><br>
+            </div>
+
+            
+            <div class="container">
+                <label for="gender" >Gender : </label>
+                <input type="radio" id="gender">Male
+                <input type="radio" id="gender">Female
+            </div>
+
+            
+            <div class="container">
+                <label for="Email">Email :</label>
+                <input type="text" id="Email" placeholder="Enter Your Email"><br>
+            </div>
+
+            
+            <div class="container">
+                <label for="phone" >Phone-No :</label>
+                <input type="text" id="phone" placeholder="Enter Your Phone-No"><br>
+            </div>
+
+            
+            <div class="container">
+                <label for="post">Your Interest :</label>
+                <select>
+                    <option>Java Developer</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            
+            <div class="container">
+                <label >Laguages And FrameWorks :</label>
+                <input type="checkbox"  id="check">C++
+                <input type="checkbox" id="check">Java
+                <input type="checkbox" id="check">Kotlin
+                <input type="checkbox" id="check">Python 
+            </div>
+
+            
+            <div class="container">
+                <label >Comments Or Suggestions</label>
+                <textarea placeholder="Enter Your Comment Here"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+                
+        </fieldset> 
+
+        </form>
+    </body>
+</html>
