@@ -1,31 +1,23 @@
-package Exsercise_Problems;
-
 import java.util.Scanner;
 
 public class Palindrome {
+    public static void main(String args[]) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println("*** PALINDROME CHECKER ***");
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ENTER THE STRING ");
-		
-		String var1 = sc.nextLine();
-		
-		
-		StringBuilder sb = new StringBuilder(var1);
-		
-		String var2 = sb.reverse().toString();
-		
-		if(var1.equalsIgnoreCase(var2)){
-			System.out.println("THE STRING IS PALINDROME ");
-		}
-		else{
-			System.out.println("THE STRING IS NOT A PALINDROME ");
-			
-		}
+        Scanner scanner = new Scanner(System.in);
 
-	}
+        System.out.println("\t *** Palindrome String ***");
 
+        System.out.print("Enter The String :");
+
+        String str = scanner.nextLine();
+
+        System.out.println("The Entered String IS : " + str);
+
+        String Reversed = new StringBuilder(str).reverse().toString();
+
+        if (str.equals(Reversed)) System.out.println("The Following String Is A Palindrome");
+        else System.out.println("The Following String Is Not A Palindrome");
+
+        scanner.close();
+    }
 }
