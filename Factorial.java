@@ -21,4 +21,4 @@ public class Factorial {
 
         scanner.close();
     }
-}
+}
